@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdint.h>
 #include <stdio.h>
 
@@ -12,7 +11,7 @@ int main(int argc, char *argv[]){
 
     int n = 2;
 
-    while (pow(n, 2) < prime){
+	while (n * n <= prime){
         if (prime % n == 0){
             *pprimef++ = n;
             prime /= n;
