@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define UPPER 20
+#define UPPER 11
 #define LOWER 1
 
 uint64_t greatest_common_denominator(uint64_t x, int y);
@@ -11,7 +11,7 @@ uint64_t least_common_multiple(uint64_t x, int y);
 int main(int argc, char *argv[]){
 	uint64_t product = LOWER;
 
-	for(int i=fmax(2 ,LOWER); i<UPPER; i++){
+	for(int i=fmax(2 ,LOWER); i<=UPPER; i++){
 		product = least_common_multiple(product, i);
 	}
 
